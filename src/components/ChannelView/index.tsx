@@ -2,7 +2,7 @@
 // Updated: 2025-01-21 - Fixed hashtag filtering and improved thread handling
 
 import { useChannel, useThread } from '@/providers/ChannelProvider'
-import { Hash, Settings } from 'lucide-react'
+import { ChevronLeft, Hash, Settings } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import NoteList from '@/components/NoteList'
 import { Button } from '@/components/ui/button'
@@ -11,7 +11,9 @@ import ChannelSettings from '@/components/ChannelSettings'
 import { useKindFilter } from '@/providers/KindFilterProvider'
 import { useSecondaryPage } from '@/PageManager'
 import { useFavoriteRelays } from '@/providers/FavoriteRelaysProvider'
+import { useScreenSize } from '@/providers/ScreenSizeProvider'
 import { TFeedSubRequest } from '@/types'
+import ChannelList from '@/components/ChannelList'
 
 export interface ChannelViewProps {
   /** Optional custom class name */
@@ -19,11 +21,12 @@ export interface ChannelViewProps {
 }
 
 export default function ChannelView({ className }: ChannelViewProps) {
-  const { activeChannel } = useChannel()
+  const { activeChannel, clearActiveChannel } = useChannel()
   const { showKinds } = useKindFilter()
   const { openThread } = useThread()
   const { currentIndex } = useSecondaryPage()
   const { favoriteRelays } = useFavoriteRelays()
+  const { isSmallScreen } = useScreenSize()
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [previousIndex, setPreviousIndex] = useState(currentIndex)
 
@@ -47,6 +50,16 @@ export default function ChannelView({ className }: ChannelViewProps) {
 
 
   if (!activeChannel) {
+    if (isSmallScreen) {
+      return (
+        <div className={cn('flex flex-col h-full', className)}>
+          <div className="flex items-center gap-3 px-4 py-3 border-b border-border shrink-0">
+            <h1 className="text-lg font-semibold">Channels</h1>
+          </div>
+          <ChannelList collapse={false} className="p-2" />
+        </div>
+      )
+    }
     return (
       <div className={cn('flex flex-col items-center justify-center h-full', className)}>
         <Hash className="size-16 text-muted-foreground mb-4" />
@@ -82,6 +95,17 @@ export default function ChannelView({ className }: ChannelViewProps) {
     <div className={cn('flex flex-col h-full', className)}>
       {/* Channel Header */}
       <div className="flex items-center gap-3 px-4 py-3 border-b border-border shrink-0">
+        {isSmallScreen && (
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={clearActiveChannel}
+            aria-label="Back to channels"
+            className="-ml-2"
+          >
+            <ChevronLeft className="size-5" />
+          </Button>
+        )}
         <div className="flex items-center justify-center size-8">
           {activeChannel.icon ? (
             <span className="text-2xl">{activeChannel.icon}</span>

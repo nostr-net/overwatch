@@ -44,6 +44,7 @@ type TChannelContext = {
 
   // Actions
   setActiveChannel: (channelId: string) => void
+  clearActiveChannel: () => void
   createChannel: (data: TChannelCreateInput) => Promise<TChannel>
   updateChannel: (id: string, updates: TChannelUpdateInput) => Promise<void>
   deleteChannel: (id: string) => Promise<void>
@@ -60,9 +61,10 @@ export function ChannelProvider({ children }: { children: ReactNode }) {
   const [channels, setChannels] = useAtom(channelsAtom)
   const [activeChannelId, setActiveChannelId] = useAtom(activeChannelIdAtom)
 
-  // Set first channel as active if channels exist but no active channel is set
+  // Set first channel as active on desktop if channels exist but no active channel is set
+  // On mobile, start with null so the channel list is shown (master-detail pattern)
   useEffect(() => {
-    if (!activeChannelId && channels.length > 0) {
+    if (!activeChannelId && channels.length > 0 && window.innerWidth > 768) {
       setActiveChannelId(channels[0].id)
     }
   }, [])
@@ -119,6 +121,11 @@ export function ChannelProvider({ children }: { children: ReactNode }) {
       window.removeEventListener('channel-unread-updated', handleUnreadUpdate)
     }
   }, [updateUnreadCounts])
+
+  // Clear active channel (for mobile back navigation)
+  const clearActiveChannel = useCallback(() => {
+    setActiveChannelId(null)
+  }, [setActiveChannelId])
 
   // Set active channel and close any open thread
   const setActiveChannel = useCallback(
@@ -316,6 +323,7 @@ export function ChannelProvider({ children }: { children: ReactNode }) {
     channels,
     activeChannel,
     setActiveChannel,
+    clearActiveChannel,
     createChannel,
     updateChannel,
     deleteChannel,

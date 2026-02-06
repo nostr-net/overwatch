@@ -135,7 +135,7 @@ function DesktopLayout({
         <div
           className={cn(
             'grid w-full',
-            isThreadOpen ? 'grid-cols-3' : 'grid-cols-2',
+            isThreadOpen ? 'grid-cols-[2fr_3fr]' : 'grid-cols-[3fr_2fr]',
             themeSetting === 'pure-black' ? '' : 'gap-2 pr-2 py-2'
           )}
         >
@@ -198,7 +198,7 @@ function DesktopLayout({
           {isThreadOpen && (
             <div
               className={cn(
-                'bg-background overflow-hidden col-span-2',
+                'bg-background overflow-hidden',
                 themeSetting === 'pure-black' ? 'border-l' : 'rounded-lg shadow-lg'
               )}
             >
@@ -480,7 +480,7 @@ export function PageManager({ maxStackSize = 5 }: { maxStackSize?: number }) {
                 <div className="sticky top-0 lg:w-full flex justify-end self-start h-[var(--vh)]">
                   <Sidebar />
                 </div>
-                <div className="flex-1 w-0 bg-background border-x lg:flex-auto lg:w-[640px] lg:shrink-0">
+                <div className="flex-1 w-0 bg-background border-x lg:flex-auto lg:w-full lg:max-w-3xl lg:shrink-0">
                   <LazyLoadErrorBoundary>
                     <Suspense fallback={<LoadingFallback />}>
                       {!!secondaryStack.length &&
