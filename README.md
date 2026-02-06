@@ -15,6 +15,9 @@ The result is a single pane of glass for everything happening in your org -- CI 
 - Each tag maps to a channel in the sidebar
 - Real-time updates stream in over WebSockets
 
+## How it looks
+<img width="989" height="1248" alt="image" src="https://github.com/user-attachments/assets/be42f59f-b5fb-4a35-9b6f-183c2d9413bc" />
+
 
 ## Setup
 
