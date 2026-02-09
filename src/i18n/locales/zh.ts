@@ -91,7 +91,7 @@ export default {
     'Add an Account': '添加账户',
     'More options': '更多选项',
     'Add client tag': '添加客户端标签',
-    'Show others this was sent via Jumble': '告诉别人这是通过 Jumble 发送的',
+    'Show others this was sent via Overwatch': '告诉别人这是通过 Overwatch 发送的',
     'Are you sure you want to logout?': '确定要退出登录吗？',
     'relay sets': '服务器组',
     edit: '编辑',
@@ -194,9 +194,9 @@ export default {
     All: '全部',
     Reactions: '互动',
     Zaps: '打闪',
-    'Enjoying Jumble?': '喜欢 Jumble 吗？',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      '您的捐赠帮助我维护 Jumble 并使其更好！😊',
+    'Enjoying Overwatch?': '喜欢 Overwatch 吗？',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      '您的捐赠帮助我维护 Overwatch 并使其更好！😊',
     'Earlier notifications': '更早的通知',
     'Temporarily display this note': '临时显示此笔记',
     buttonFollowing: '已关注',

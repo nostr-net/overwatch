@@ -93,8 +93,8 @@ export default {
     'Add an Account': 'Добавить аккаунт',
     'More options': 'Больше опций',
     'Add client tag': 'Добавить тег клиента',
-    'Show others this was sent via Jumble':
-      'Показать другим, что сообщение отправлено через Jumble',
+    'Show others this was sent via Overwatch':
+      'Показать другим, что сообщение отправлено через Overwatch',
     'Are you sure you want to logout?': 'Вы уверены, что хотите выйти?',
     'relay sets': 'наборы ретрансляторов',
     edit: 'редактировать',
@@ -197,9 +197,9 @@ export default {
     All: 'Все',
     Reactions: 'Реакции',
     Zaps: 'Запы',
-    'Enjoying Jumble?': 'Нравится Jumble?',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      'Ваше пожертвование помогает поддерживать и улучшать Jumble! 😊',
+    'Enjoying Overwatch?': 'Нравится Overwatch?',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      'Ваше пожертвование помогает поддерживать и улучшать Overwatch! 😊',
     'Earlier notifications': 'Ранние уведомления',
     'Temporarily display this note': 'Временно отобразить эту заметку',
     buttonFollowing: 'Подписан',

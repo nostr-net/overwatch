@@ -92,7 +92,7 @@ export default {
     'Add an Account': 'Add an Account',
     'More options': 'More options',
     'Add client tag': 'Add client tag',
-    'Show others this was sent via Jumble': 'Show others this was sent via Jumble',
+    'Show others this was sent via Overwatch': 'Show others this was sent via Overwatch',
     'Are you sure you want to logout?': 'Are you sure you want to logout?',
     'relay sets': 'relay sets',
     edit: 'edit',
@@ -193,9 +193,9 @@ export default {
     All: 'All',
     Reactions: 'Reactions',
     Zaps: 'Zaps',
-    'Enjoying Jumble?': 'Enjoying Jumble?',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      'Your donation helps me maintain Jumble and make it better! 😊',
+    'Enjoying Overwatch?': 'Enjoying Overwatch?',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      'Your donation helps me maintain Overwatch and make it better! 😊',
     'Earlier notifications': 'Earlier notifications',
     'Temporarily display this note': 'Temporarily display this note',
     buttonFollowing: 'Following',

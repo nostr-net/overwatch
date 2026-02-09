@@ -92,7 +92,7 @@ export default {
     'Add an Account': 'إضافة حساب',
     'More options': 'المزيد من الخيارات',
     'Add client tag': 'إضافة وسم العميل',
-    'Show others this was sent via Jumble': 'عرض أن هذه الرسالة أُرسلت عبر Jumble',
+    'Show others this was sent via Overwatch': 'عرض أن هذه الرسالة أُرسلت عبر Overwatch',
     'Are you sure you want to logout?': 'هل أنت متأكد أنك تريد تسجيل الخروج؟',
     'relay sets': 'مجموعات الريلاي',
     edit: 'تعديل',
@@ -192,9 +192,9 @@ export default {
     All: 'الكل',
     Reactions: 'التفاعلات',
     Zaps: 'Zaps',
-    'Enjoying Jumble?': 'هل تستمتع بـ Jumble؟',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      'تبرعك يساعد في صيانة Jumble وتحسينه! 😊',
+    'Enjoying Overwatch?': 'هل تستمتع بـ Overwatch؟',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      'تبرعك يساعد في صيانة Overwatch وتحسينه! 😊',
     'Earlier notifications': 'الإشعارات السابقة',
     'Temporarily display this note': 'عرض هذه الملاحظة مؤقتاً',
     buttonFollowing: 'جارٍ المتابعة',

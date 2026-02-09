@@ -92,7 +92,7 @@ export default {
     'Add an Account': 'افزودن حساب',
     'More options': 'گزینه‌های بیشتر',
     'Add client tag': 'افزودن برچسب کلاینت',
-    'Show others this was sent via Jumble': 'به دیگران نشان دهید که از طریق Jumble ارسال شده',
+    'Show others this was sent via Overwatch': 'به دیگران نشان دهید که از طریق Overwatch ارسال شده',
     'Are you sure you want to logout?': 'آیا مطمئن هستید که می‌خواهید خارج شوید؟',
     'relay sets': 'مجموعه‌های رله',
     edit: 'ویرایش',
@@ -194,9 +194,9 @@ export default {
     All: 'همه',
     Reactions: 'واکنش‌ها',
     Zaps: 'زپ‌ها',
-    'Enjoying Jumble?': 'از Jumble لذت می‌برید؟',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      'کمک مالی شما به من در نگهداری Jumble و بهتر کردن آن کمک می‌کند! 😊',
+    'Enjoying Overwatch?': 'از Overwatch لذت می‌برید؟',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      'کمک مالی شما به من در نگهداری Overwatch و بهتر کردن آن کمک می‌کند! 😊',
     'Earlier notifications': 'اعلان‌های قبلی',
     'Temporarily display this note': 'نمایش موقت این یادداشت',
     buttonFollowing: 'دنبال می‌کنم',

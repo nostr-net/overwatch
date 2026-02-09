@@ -92,7 +92,7 @@ export default {
     'Add an Account': 'เพิ่มบัญชี',
     'More options': 'ตัวเลือกเพิ่มเติม',
     'Add client tag': 'เพิ่มแท็กไคลเอนต์',
-    'Show others this was sent via Jumble': 'แสดงให้ผู้อื่นเห็นว่าส่งผ่าน Jumble',
+    'Show others this was sent via Overwatch': 'แสดงให้ผู้อื่นเห็นว่าส่งผ่าน Overwatch',
     'Are you sure you want to logout?': 'คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ?',
     'relay sets': 'ชุดรีเลย์',
     edit: 'แก้ไข',
@@ -192,9 +192,9 @@ export default {
     All: 'ทั้งหมด',
     Reactions: 'ปฏิกิริยา',
     Zaps: 'ซาตส์',
-    'Enjoying Jumble?': 'ชอบ Jumble ไหม?',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      'การบริจาคของคุณช่วยให้ฉันดูแลและพัฒนา Jumble ให้ดีขึ้น! 😊',
+    'Enjoying Overwatch?': 'ชอบ Overwatch ไหม?',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      'การบริจาคของคุณช่วยให้ฉันดูแลและพัฒนา Overwatch ให้ดีขึ้น! 😊',
     'Earlier notifications': 'การแจ้งเตือนก่อนหน้า',
     'Temporarily display this note': 'แสดงโน้ตนี้ชั่วคราว',
     buttonFollowing: 'กำลังติดตาม',

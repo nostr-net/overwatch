@@ -95,8 +95,8 @@ export default defineConfig({
         enabled: true
       },
       manifest: {
-        name: 'Jumble',
-        short_name: 'Jumble',
+        name: 'Overwatch',
+        short_name: 'Overwatch',
         icons: [
           {
             src: '/pwa-512x512.png',

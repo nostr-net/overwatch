@@ -92,8 +92,8 @@ export default {
     'Add an Account': 'अकाउंट जोड़ें',
     'More options': 'अधिक विकल्प',
     'Add client tag': 'क्लाइंट टैग जोड़ें',
-    'Show others this was sent via Jumble':
-      'दूसरों को दिखाएं कि यह Jumble के माध्यम से भेजा गया था',
+    'Show others this was sent via Overwatch':
+      'दूसरों को दिखाएं कि यह Overwatch के माध्यम से भेजा गया था',
     'Are you sure you want to logout?': 'क्या आप वाकई लॉगआउट करना चाहते हैं?',
     'relay sets': 'रिले सेट',
     edit: 'संपादित करें',
@@ -195,9 +195,9 @@ export default {
     All: 'सभी',
     Reactions: 'प्रतिक्रियाएं',
     Zaps: 'जैप्स',
-    'Enjoying Jumble?': 'Jumble का आनंद ले रहे हैं?',
-    'Your donation helps me maintain Jumble and make it better! 😊':
-      'आपका दान मुझे Jumble को बनाए रखने और इसे बेहतर बनाने में मदद करता है! 😊',
+    'Enjoying Overwatch?': 'Overwatch का आनंद ले रहे हैं?',
+    'Your donation helps me maintain Overwatch and make it better! 😊':
+      'आपका दान मुझे Overwatch को बनाए रखने और इसे बेहतर बनाने में मदद करता है! 😊',
     'Earlier notifications': 'पुरानी सूचनाएं',
     'Temporarily display this note': 'इस नोट को अस्थायी रूप से प्रदर्शित करें',
     buttonFollowing: 'फॉलो कर रहे हैं',

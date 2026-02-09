@@ -25,7 +25,7 @@ class LightningService {
     if (!LightningService.instance) {
       LightningService.instance = this
       init({
-        appName: 'Jumble',
+        appName: 'Overwatch',
         showBalance: false
       })
     }

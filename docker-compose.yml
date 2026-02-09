@@ -1,8 +1,8 @@
 version: "3.8"
 
 services:
-  jumble:
-    container_name: jumble-nginx
+  overwatch:
+    container_name: overwatch-nginx
     build:
       context: .
       dockerfile: Dockerfile
@@ -17,7 +17,7 @@ services:
       - "8089:80"
     restart: unless-stopped
     networks:
-      - jumble
+      - overwatch
 
   proxy-server:
     image: ghcr.io/danvergara/jumble-proxy-server:latest
@@ -29,7 +29,7 @@ services:
     ports:
       - "8090:8080"
     networks:
-      - jumble
+      - overwatch
 
 networks:
-  jumble:
+  overwatch:

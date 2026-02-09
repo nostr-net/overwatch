@@ -1,5 +1,5 @@
 {
-  "name": "jumble",
+  "name": "overwatch",
   "version": "0.1.0",
   "description": "A user-friendly Nostr client for exploring relay feeds",
   "private": true,
